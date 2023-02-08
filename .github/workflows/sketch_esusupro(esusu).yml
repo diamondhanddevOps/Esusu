@@ -29,6 +29,9 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
+             Django==3.2.4
+             gunicorn==20.0.4
+             psycopg2==2.8.7
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
