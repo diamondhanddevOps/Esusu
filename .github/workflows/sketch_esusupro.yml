@@ -26,10 +26,11 @@ jobs:
         run: |
           python -m venv venv
           source venv/bin/activate
-          run: pip install --upgrade pip 
+          
       - name: Install dependencies
-           
-        run: pip install -r requirements.txt
+        run:
+          pip install --upgrade pip 
+          pip install -r requirements.txt
        
          pscopg2-binary==2.8.7
         
